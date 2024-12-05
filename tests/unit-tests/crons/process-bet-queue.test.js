@@ -10,7 +10,7 @@ import { ProcessBetQueue } from "../../../src/crons/process-bet-queue";
 
 describe("process bet queue instance", () => {
     const definition = {
-        id: 36,
+        id: 1511,
         name: "KenoMatch1",
         durations: {
             wholeRound: 77,

@@ -16,7 +16,7 @@ jest.mock("../../../src/helpers/crypto-helper");
 
 describe("game cron instance", () => {
     const definition = {
-        id: 36,
+        id: 1511,
         name: "KenoMatch1",
         configName: "kenomatch1",
         durations: {

@@ -9,7 +9,7 @@ import { PlaceBetConsumer } from "../../../src/consumers/place-bet-consumer";
 describe("Place Bet consumer instance", () => {
     // arrange
     const definition = {
-        id: 36,
+        id: 1511,
         name: "KenoMatch1",
         durations: {
             wholeRound: 77,

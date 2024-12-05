@@ -10,30 +10,8 @@ export default {
         },
         useAuthenticate: true,
         requestTimeout: 10000,
-        placeBetTimeout: 2000,
+        placeBetTimeout: 4000,
         enabledApiLogs: true,
-    },
-    socketOptions: {
-        pingInterval: 60 * 1000,
-        pingTimeout: 60 * 1000,
-        transports: ["websocket"],
-        allowUpgrades: false,
-        perMessageDeflate: false,
-    },
-    enabledLogs: true,
-    database: {
-        url: "mongodb://lmn_backend:LmnBackend%40517@10.99.99.53:39430,10.99.99.54:39430,10.99.99.188:39430,10.99.99.187:39430/?replicaSet=SN-SIT&appName=LuckyNext1",
-        options: {
-            dbName: "minigame",
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            auto_reconnect: true,
-        },
-    },
-    sentry: {
-        sentryUrl: "http://d039f2abe16b4252a70cdf60fff232b6@10.2.190.51:9009/282",
-        logIdentifier: "LuckyNext1",
-        env: "SIT",
     },
     authenticateSettings: {
         url: "http://gn_auth_api_sit:5000",
@@ -46,14 +24,31 @@ export default {
     userServiceSettings: {
         url: "http://gn_user_service_sit:5000",
     },
+    socketOptions: {
+        pingInterval: 60 * 1000,
+        pingTimeout: 60 * 1000,
+        transports: ["websocket"],
+        allowUpgrades: false,
+        perMessageDeflate: false,
+    },
+    enabledLogs: true,
+    database: {
+        url: "mongodb://lmn_backend:LmnBackend%40517@10.99.99.53:39430,10.99.99.54:39430,10.99.99.188:39430,10.99.99.187:39430/?replicaSet=SN-SIT&appName=KenoMatch",
+        options: {
+            dbName: "minigame",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        },
+    },
+    sentry: {
+        sentryUrl: "http://d039f2abe16b4252a70cdf60fff232b6@10.2.190.51:9009/282",
+        logIdentifier: "keno-match",
+        env: "SIT",
+    },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     metrics: {
         enable: true,
         secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
     },
     enableMsgpackParser: true,
-    gameManagementApiSettings: {
-        BASE: "http://gn_game_management_service_sit:5000",
-    },
-    disableCors: false,
 };

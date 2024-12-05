@@ -9,7 +9,7 @@ import { RoundQuery } from "../../../src/query-apis";
 
 describe("in game consumer instance", () => {
     const definition = {
-        id: 36,
+        id: 1511,
         name: "KenoMatch1",
         durations: {
             wholeRound: 77,

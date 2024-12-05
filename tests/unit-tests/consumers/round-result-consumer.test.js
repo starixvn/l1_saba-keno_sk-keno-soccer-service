@@ -17,7 +17,7 @@ describe("Round result consumer instance", () => {
     const mockDate = new Date(123456);
     let spy;
     const definition = {
-        id: 36,
+        id: 1511,
         name: "KenoMatch1",
         durations: {
             wholeRound: 77,

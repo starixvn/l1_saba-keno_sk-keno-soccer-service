@@ -17,7 +17,7 @@ jest.mock(".../../../src/helpers/array-helper");
 describe("settle game round consumer instance", () => {
     // arrange
     const definition = {
-        id: 36,
+        id: 1511,
         name: "KenoMatch1",
         durations: {
             wholeRound: 77,

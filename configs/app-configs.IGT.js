@@ -2,8 +2,8 @@ export default {
     hostingPort: 8089,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1-game-api-local-service:5000",
-        authUrl: "http://l1-auth-api-local-service:5000",
+        apiUrl: "http://gn-game-api-local-service:5000",
+        authUrl: "http://gn-auth-api-local-service:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -14,7 +14,7 @@ export default {
         enabledApiLogs: true,
     },
     authenticateSettings: {
-        url: "http://l1-auth-api-local-service:5000",
+        url: "http://gn-auth-api-local-service:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,

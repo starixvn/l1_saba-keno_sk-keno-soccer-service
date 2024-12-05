@@ -1,5 +1,5 @@
 const game = {
-    id: 36,
+    id: 1511,
     name: "kenomatch1",
 };
 
