@@ -10,7 +10,7 @@ describe("Place Bet consumer instance", () => {
     // arrange
     const definition = {
         id: 1511,
-        name: "KenoMatch1",
+        name: "SkKenoSoccer",
         durations: {
             wholeRound: 77,
             firstHalfPlacingBets: 69,

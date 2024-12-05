@@ -189,7 +189,7 @@ export class GameCron extends Core.Crons.BaseGameCron {
                 roundId,
             };
             this.gameData.currentMD5 = md5;
-            const liveOdds = await this.globalConfigsRepository.findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder").lean().exec();
+            const liveOdds = await this.globalConfigsRepository.findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder").lean().exec();
             this.gameData.liveOdds = { ...liveOdds.blueRed[totalBlue - totalRed], ...liveOdds.overUnder[sum] };
 
             if (currentRound.fullTime && currentRound.fullTime.encryptedResult) {

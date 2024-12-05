@@ -1,5 +1,5 @@
 variables:
-    SMOKE_PRODUCT_NAME: KenoMatch
+    SMOKE_PRODUCT_NAME: KenoSoccer
     DOCKER_SLIM: enable
     ENABLE_NODEJS_INTEGRATION_TEST: 'true'
     NODEJS_INTEGRATION_TEST_IMAGE_VERSION: hub.lumigame.com/base/node:18.13

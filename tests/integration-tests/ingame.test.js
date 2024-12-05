@@ -4,7 +4,7 @@ import { initUserSession } from "./init-user-session";
 
 export const ingameTest = () => {
     describe("when user joins game", () => {
-        it("should return kenomatch data", (done) => {
+        it("should return kenosoccer data", (done) => {
             // Arrange
             const normalUserClientDriver = new GameClientDriver(socketOptions, initUserSession(normalUser));
 

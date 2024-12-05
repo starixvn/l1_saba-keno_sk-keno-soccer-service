@@ -1,6 +1,6 @@
 export const globalConfigData = [
     {
-        type: "kenomatch_liveodds",
+        type: "kenosoccer_liveodds",
         adjRate: {
             blueRed: 2,
             overUnder: 1.5,

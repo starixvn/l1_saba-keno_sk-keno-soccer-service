@@ -17,7 +17,7 @@ export const hedgeBetGroups = [
 export default [
     {
         id: 1511,
-        name: "KenoMatch1",
+        name: "SkKenoSoccer",
         durations: {
             wholeRound: 77,
             firstHalfPlacingBets: 69,
@@ -31,16 +31,16 @@ export default [
         hedgeBetGroups,
         defaultBetTracks: {},
         repositories: {
-            roundsRepository: getRoundRepository("kenomatch1_phien"),
-            betsRepository: getBetRepository("kenomatch1_one"),
-            betLogsRepository: getBetLogsRepository("kenomatch1_cuoc"),
+            roundsRepository: getRoundRepository("kenosoccer_rounds"),
+            betsRepository: getBetRepository("kenosoccer_bets"),
+            betLogsRepository: getBetLogsRepository("kenosoccer_betlogs"),
         },
         generateResult,
         settle: getSettlementResult,
     },
     {
         id: 1512,
-        name: "KenoMatch2",
+        name: "SkKenoSoccer2",
         durations: {
             wholeRound: 85,
             firstHalfPlacingBets: 73,
@@ -54,9 +54,9 @@ export default [
         hedgeBetGroups,
         defaultBetTracks: {},
         repositories: {
-            roundsRepository: getRoundRepository("kenomatch2_phien"),
-            betsRepository: getBetRepository("kenomatch2_one"),
-            betLogsRepository: getBetLogsRepository("kenomatch2_cuoc"),
+            roundsRepository: getRoundRepository("kenosoccer2_rounds"),
+            betsRepository: getBetRepository("kenosoccer2_bets"),
+            betLogsRepository: getBetLogsRepository("kenosoccer2_betlogs"),
         },
         generateResult,
         settle: getSettlementResult,

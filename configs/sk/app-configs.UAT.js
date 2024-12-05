@@ -33,7 +33,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend%4022027@10.99.99.53:39420,10.99.99.54:39420,10.99.99.188:39420,10.99.99.187:39420/?replicaSet=SN-UAT&appName=KenoMatch",
+        url: "mongodb://lmn_backend:LmnBackend%4022027@10.99.99.53:39420,10.99.99.54:39420,10.99.99.188:39420,10.99.99.187:39420/?replicaSet=SN-UAT&appName=KenoSoccer",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,

@@ -18,7 +18,7 @@ describe("Round result consumer instance", () => {
     let spy;
     const definition = {
         id: 1511,
-        name: "KenoMatch1",
+        name: "SkKenoSoccer",
         durations: {
             wholeRound: 77,
             firstHalfPlacingBets: 69,
@@ -72,7 +72,7 @@ describe("Round result consumer instance", () => {
                 },
             };
             globalConfigsRepository
-                .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                 .lean()
                 .exec.mockReturnValueOnce({ blueRed: {}, overUnder: {} });
             const roundResultConsumer = new RoundResultConsumer(
@@ -94,7 +94,7 @@ describe("Round result consumer instance", () => {
             // arrange
             gameData.roundId = 2;
             globalConfigsRepository
-                .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                 .lean()
                 .exec.mockReturnValueOnce({ blueRed: {}, overUnder: {} });
             const roundResultConsumer = new RoundResultConsumer(
@@ -118,7 +118,7 @@ describe("Round result consumer instance", () => {
             // arrange
             gameData.roundId = 2;
             globalConfigsRepository
-                .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                 .lean()
                 .exec.mockReturnValueOnce({ blueRed: {}, overUnder: {} });
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
@@ -150,7 +150,7 @@ describe("Round result consumer instance", () => {
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
             when(sumArrayNumber).calledWith([1, 2, 3, 4, 5]).mockReturnValue(15).calledWith([6, 7, 8, 9, 10]).mockReturnValue(40);
             globalConfigsRepository
-                .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                 .lean()
                 .exec.mockReturnValueOnce({
                     blueRed: { [-25]: { liveFTBlue: expectedLiveOdds.liveFTBlue, liveFTRed: expectedLiveOdds.liveFTRed } },
@@ -175,7 +175,7 @@ describe("Round result consumer instance", () => {
             // arrange
             gameData.roundId = 2;
             globalConfigsRepository
-                .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                 .lean()
                 .exec.mockReturnValueOnce({ blueRed: {}, overUnder: {} });
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
@@ -211,7 +211,7 @@ describe("Round result consumer instance", () => {
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
             when(sumArrayNumber).calledWith([1, 2, 3, 4, 5]).mockReturnValue(15).calledWith([6, 7, 8, 9, 10]).mockReturnValue(40);
             globalConfigsRepository
-                .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                 .lean()
                 .exec.mockReturnValueOnce({
                     blueRed: { [-25]: { liveFTBlue: liveOdds.liveFTBlue, liveFTRed: liveOdds.liveFTRed } },
@@ -257,7 +257,7 @@ describe("Round result consumer instance", () => {
             gameData.roundId = 2;
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
             when(sumArrayNumber).calledWith([1, 2, 3, 4, 5]).mockReturnValue(15).calledWith([6, 7, 8, 9, 10]).mockReturnValue(40);
-            globalConfigsRepository.findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder").lean().exec.mockReturnValueOnce({
+            globalConfigsRepository.findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder").lean().exec.mockReturnValueOnce({
                 blueRed: {},
                 overUnder: {},
             });
@@ -284,7 +284,7 @@ describe("Round result consumer instance", () => {
             gameData.roundId = 2;
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
             when(sumArrayNumber).calledWith([1, 2, 3, 4, 5]).mockReturnValue(15).calledWith([6, 7, 8, 9, 10]).mockReturnValue(40);
-            globalConfigsRepository.findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder").lean().exec.mockReturnValueOnce({
+            globalConfigsRepository.findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder").lean().exec.mockReturnValueOnce({
                 blueRed: {},
                 overUnder: {},
             });
@@ -319,7 +319,7 @@ describe("Round result consumer instance", () => {
             gameData.roundId = 2;
             definition.generateResult.mockReturnValueOnce([1, 2, 3, 4, 5]).mockReturnValueOnce([6, 7, 8, 9, 10]);
             when(sumArrayNumber).calledWith([1, 2, 3, 4, 5]).mockReturnValue(15).calledWith([6, 7, 8, 9, 10]).mockReturnValue(40);
-            globalConfigsRepository.findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder").lean().exec.mockReturnValueOnce({
+            globalConfigsRepository.findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder").lean().exec.mockReturnValueOnce({
                 blueRed: {},
                 overUnder: {},
             });

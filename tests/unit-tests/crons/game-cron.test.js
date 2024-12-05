@@ -17,8 +17,8 @@ jest.mock("../../../src/helpers/crypto-helper");
 describe("game cron instance", () => {
     const definition = {
         id: 1511,
-        name: "KenoMatch1",
-        configName: "kenomatch1",
+        name: "SkKenoSoccer",
+        configName: "skkenosoccer",
         durations: {
             wholeRound: 77,
             firstHalfPlacingBets: 69,
@@ -341,7 +341,7 @@ describe("game cron instance", () => {
             beforeEach(() => {
                 definition.settle = jest.fn();
                 globalConfigsRepository
-                    .findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder")
+                    .findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder")
                     .lean()
                     .exec.mockReturnValueOnce({
                         blueRed: { [-25]: { liveFTBlue: 1.97, liveFTRed: 1.97 } },

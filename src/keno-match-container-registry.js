@@ -7,7 +7,7 @@ import globalConfigs from "./models/global-configs";
 import { RoundResultPublisher } from "./publishers";
 import { HistoryQuery, RoundQuery } from "./query-apis";
 
-export default class KenoMatchContainerRegistry extends MultipleGamesContainerRegistry {
+export default class KenoSoccerContainerRegistry extends MultipleGamesContainerRegistry {
     /**
      * @param {object} appConfigs
      * @param {GameDefinition} definition

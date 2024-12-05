@@ -38,7 +38,7 @@ export class RoundResultConsumer {
         const sum = totalBlue + totalRed;
         const settlementResult = settle({ totalBlue, totalRed }, true);
 
-        const liveOdds = await this.globalConfigsRepository.findOne({ type: "kenomatch_liveodds" }, "blueRed overUnder").lean().exec();
+        const liveOdds = await this.globalConfigsRepository.findOne({ type: "kenosoccer_liveodds" }, "blueRed overUnder").lean().exec();
         this.gameData.liveOdds = { ...liveOdds.blueRed[totalBlue - totalRed], ...liveOdds.overUnder[sum] };
         const odds = { ...this.gameData.gameConfigs.odds, ...this.gameData.liveOdds };
 
