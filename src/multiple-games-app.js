@@ -1,6 +1,6 @@
 import { Core } from "sc-game-base";
 import { GameData } from "./game-data";
-import KenoSoccerContainerRegistry from "./keno-match-container-registry";
+import KenoSoccerContainerRegistry from "./keno-soccer-container-registry";
 
 export default class MultipleGamesApp extends Core.BaseGameApp {
     startGames(definitions) {

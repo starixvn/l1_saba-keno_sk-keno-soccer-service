@@ -43,7 +43,7 @@ export default {
     },
     sentry: {
         sentryUrl: "http://f457113be82441879a991096fce8c26c@10.2.189.50:9009/172",
-        logIdentifier: "keno-match",
+        logIdentifier: "keno-soccer",
         env: "PROD",
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",

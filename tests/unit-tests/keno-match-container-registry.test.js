@@ -1,8 +1,8 @@
 import { MultipleGamesContainerRegistry } from "sc-multiple-games-base";
 
-import KenoSoccerContainerRegistry from "../../src/keno-match-container-registry";
+import KenoSoccerContainerRegistry from "../../src/keno-soccer-container-registry";
 
-describe("keno-match-container-registry", () => {
+describe("keno-soccer-container-registry", () => {
     describe("extends", () => {
         it("inherit MultipleGamesContainerRegistry", () => {
             // arrange

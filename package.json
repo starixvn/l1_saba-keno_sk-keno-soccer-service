@@ -1,8 +1,8 @@
 {
-    "name": "keno-match-service",
+    "name": "keno-soccer-service",
     "version": "1.0.0",
     "main": "./src/app.js",
-    "repository": "https://git3.nexdev.net/l1/game-services/keno-match-service.git",
+    "repository": "https://git3.nexdev.net/l1/game-services/keno-soccer-service.git",
     "author": "pentagon",
     "license": "MIT",
     "type": "module",
