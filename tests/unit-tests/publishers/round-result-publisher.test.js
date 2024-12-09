@@ -3,7 +3,7 @@ import { RoundResultPublisher } from "../../../src/publishers/round-result-publi
 
 describe("round result publisher instance", () => {
     const gameData = new GameData();
-    const gameName = "keno match";
+    const gameName = "keno soccer";
 
     const publisher = new RoundResultPublisher(gameName, gameData);
 

@@ -9,7 +9,7 @@ export const run = async () => {
     stubUserService(appConfigs);
 
     const definitions = gameSettings.map((gameSetting) => new GameDefinition(gameSetting));
-    const app = new MultipleGamesApp("Keno Match", appConfigs);
+    const app = new MultipleGamesApp("Keno Soccer", appConfigs);
     await app.run();
     app.startGames(definitions);
 };

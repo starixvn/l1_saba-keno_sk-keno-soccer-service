@@ -12,7 +12,7 @@ import {
 } from "sc-game-service-integration-utils";
 
 import appConfigs from "../../../src/app-configs.IGT";
-import kenoMatchRounds from "../../../src/models/rounds";
+import kenoSoccerRounds from "../../../src/models/rounds";
 import globalConfigs from "../../../src/models/global-configs";
 import bets from "../../../src/models/bets";
 import { currencyData, game, gameConfig, rounds, userBetData } from "./test-data";
@@ -57,7 +57,7 @@ const getUserId = async (playerId) => {
 
 const createRounds = async () => {
     try {
-        return kenoMatchRounds("kenosoccer_phiens").insertMany(rounds);
+        return kenoSoccerRounds("kenosoccer_phiens").insertMany(rounds);
     } catch (error) {
         console.log(error);
     }

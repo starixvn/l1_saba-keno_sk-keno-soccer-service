@@ -5,7 +5,7 @@ import MultipleGamesApp from "./multiple-games-app";
 
 export const run = async () => {
     const definitions = gameSettings.map((gameSetting) => new GameDefinition(gameSetting));
-    const app = new MultipleGamesApp("Keno Match", appConfigs);
+    const app = new MultipleGamesApp("Keno Soccer", appConfigs);
     await app.run();
     app.startGames(definitions);
 };
