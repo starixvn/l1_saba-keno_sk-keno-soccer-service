@@ -8,7 +8,7 @@ import getBetLogsRepository from "../../../src/models/bet-logs";
 export default [
     {
         id: 1511,
-        name: "SkKenoSoccer",
+        name: "KenoSoccer",
         durations: {
             wholeRound: 30,
             firstHalfPlacingBets: 28,

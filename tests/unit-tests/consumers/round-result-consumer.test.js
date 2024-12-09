@@ -18,7 +18,7 @@ describe("Round result consumer instance", () => {
     let spy;
     const definition = {
         id: 1511,
-        name: "SkKenoSoccer",
+        name: "KenoSoccer",
         durations: {
             wholeRound: 77,
             firstHalfPlacingBets: 69,

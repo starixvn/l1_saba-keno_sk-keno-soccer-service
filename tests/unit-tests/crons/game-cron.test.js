@@ -17,8 +17,8 @@ jest.mock("../../../src/helpers/crypto-helper");
 describe("game cron instance", () => {
     const definition = {
         id: 1511,
-        name: "SkKenoSoccer",
-        configName: "skkenosoccer",
+        name: "KenoSoccer",
+        configName: "kenosoccer",
         durations: {
             wholeRound: 77,
             firstHalfPlacingBets: 69,
