@@ -42,7 +42,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://81e47b9ef0c34ab08c30a8612d9a348e@sentry.lumigame.com/85",
+        sentryUrl: "https://0ab2ad396c5a4afbb4c6b65cf39cc4db@sentry.lumigame.com/102",
         logIdentifier: "keno-soccer",
         env: "LOCAL",
     },
