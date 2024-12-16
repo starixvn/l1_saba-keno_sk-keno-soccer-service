@@ -41,7 +41,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://d039f2abe16b4252a70cdf60fff232b6@10.2.190.51:9009/282",
+        sentryUrl: "https://3df8fe3975ee476d9d556be4b7658990@10.2.190.51:9009/303",
         logIdentifier: "keno-soccer",
         env: "SIT",
     },

@@ -42,7 +42,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://d039f2abe16b4252a70cdf60fff232b6@10.2.190.51:9009/288",
+        sentryUrl: "https://874d2d9593d84ceca0f566c2d4723478@10.2.190.51:9009/304",
         logIdentifier: "keno-soccer",
         env: "UAT",
     },
